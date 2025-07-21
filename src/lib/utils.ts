@@ -13,7 +13,7 @@ export type WithoutChildrenOrChild<T> = WithoutChildren<WithoutChild<T>>;
 export type WithElementRef<T, U extends HTMLElement = HTMLElement> = T & { ref?: U | null };
 
 export async function fetchSummaryData() {
-  const BASE_URL = import.meta.env.VITE_BASE_URL;
+  const BASE_URL = import.meta.env.BACKEND_URL;
   const token = sessionStorage.getItem('auth_token');
   if (!token) throw new Error('NO_TOKEN');
   const res = await fetch(`${BASE_URL}/v1/summary/city?cities=Jakarta,Solo`, {
