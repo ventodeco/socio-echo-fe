@@ -3,7 +3,7 @@ services:
   frontend:
     build: .
     ports:
-      - "100010:80"
+      - "3000:80"
     restart: unless-stopped
     env_file:
       - .env
