@@ -26,7 +26,8 @@
 		loading = true;
 		errorMsg = "";
 		try {
-			const res = await fetch("http://localhost:8080/v1/login", {
+			const BASE_URL = import.meta.env.VITE_BASE_URL;
+			const res = await fetch(`${BASE_URL}/v1/login`, {
 				method: "POST",
 				headers: { "content-type": "application/json" },
 				body: JSON.stringify({ email, password })
