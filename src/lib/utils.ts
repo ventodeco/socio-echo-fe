@@ -1,3 +1,4 @@
+import { goto } from "$app/navigation";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
@@ -23,4 +24,9 @@ export async function fetchSummaryData() {
   if (data.errors?.[0]?.code === '401') throw new Error('TOKEN_EXPIRED');
   if (!data.success) throw new Error('API_ERROR');
   return data.data.cities;
+}
+
+export async function handleLogout() {
+  sessionStorage.removeItem('auth_token');
+  goto('/login');
 }

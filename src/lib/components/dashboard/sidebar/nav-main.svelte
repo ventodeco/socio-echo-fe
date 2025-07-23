@@ -13,10 +13,9 @@
 			{#each items as item (item.title)}
 				<Sidebar.MenuItem>
 					<Sidebar.MenuButton tooltipContent={item.title}>
-						{#if item.icon}
-							<item.icon />
-						{/if}
-						<span>{item.title}</span>
+						<a href={item.url} class="flex">
+							<item.icon class="mr-2" /> <span>{item.title}</span>
+						</a>
 					</Sidebar.MenuButton>
 				</Sidebar.MenuItem>
 			{/each}

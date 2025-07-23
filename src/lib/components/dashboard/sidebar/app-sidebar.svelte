@@ -18,12 +18,12 @@
 		navMain: [
 			{
 				title: "Summary",
-				url: "/summary",
+				url: "/dashboard/summary",
 				icon: DashboardIcon,
 			},
 			{
 				title: "Testing",
-				url: "/uhuy",
+				url: "/dashboard/testing",
 				icon: DashboardIcon,
 			},
 		],

@@ -30,12 +30,12 @@
 		navMain: [
 			{
 				title: "Dashboard",
-				url: "#",
+				url: "/test",
 				icon: DashboardIcon,
 			},
 			{
 				title: "Lifecycle",
-				url: "#",
+				url: "/te",
 				icon: ListDetailsIcon,
 			},
 			{
@@ -105,7 +105,7 @@
 		navSecondary: [
 			{
 				title: "Settings",
-				url: "#",
+				url: "/tes",
 				icon: SettingsIcon,
 			},
 			{

@@ -76,7 +76,7 @@
 				<Input id="password-{id}" type="password" required bind:value={password} />
 			</div>
 			{#if errorMsg}
-				<div style="background: yellow; color: red; z-index: 9999;">{errorMsg}</div>
+				<div style="color: red; z-index: 9999;">{errorMsg}</div>
 			{/if}
 			<Button type="submit" class="w-full" disabled={loading}>{loading ? "Logging in..." : "Login"}</Button>
 			<Button variant="outline" class="w-full" type="button" disabled={loading}>

@@ -7,6 +7,7 @@
 	import * as Avatar from "$lib/components/ui/avatar/index.js";
 	import * as DropdownMenu from "$lib/components/ui/dropdown-menu/index.js";
 	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
+	import { handleLogout } from "$lib/utils.js";
 
 	let { user }: { user: { name: string; email: string; avatar: string } } = $props();
 
@@ -75,7 +76,7 @@
 				<DropdownMenu.Separator />
 				<DropdownMenu.Item>
 					<LogoutIcon />
-					Log out
+					<span onclick={() => handleLogout()}>Logout</span>
 				</DropdownMenu.Item>
 			</DropdownMenu.Content>
 		</DropdownMenu.Root>
