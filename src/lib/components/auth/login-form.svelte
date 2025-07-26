@@ -17,7 +17,7 @@
 		const token = sessionStorage.getItem("auth_token");
 		if (token) {
 			// Optionally, validate token with a ping or just redirect
-			goto("/dashboard");
+			goto("/dashboard/summary");
 		}
 	});
 
@@ -36,7 +36,7 @@
 			const data = await res.json();
 			if (data.success && data.data?.token) {
 				sessionStorage.setItem("auth_token", data.data.token);
-				goto("/dashboard");
+				goto("/dashboard/summary");
 			} else {
 				const code = data.errors?.[0]?.code;
 				if (code === "1001" || code === 1001) {
