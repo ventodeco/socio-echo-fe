@@ -24,6 +24,7 @@
       <a href="#features" class="text-sm font-medium text-gray-600 hover:text-primary">Features</a>
       <a href="#how-it-works" class="text-sm font-medium text-gray-600 hover:text-primary">How It Works</a>
       <a href="#use-cases" class="text-sm font-medium text-gray-600 hover:text-primary">Use Cases</a>
+      <a href="/blog" class="text-sm font-medium text-gray-600 hover:text-primary">Blog</a>
     </nav>
     <div class="flex items-center gap-4">
       <a href="/login" class="text-sm font-medium text-gray-600 hover:text-primary">Login</a>
@@ -403,6 +404,7 @@
             <li><a href="#features" class="hover:text-primary">Features</a></li>
             <li><a href="#how-it-works" class="hover:text-primary">How It Works</a></li>
             <li><a href="#use-cases" class="hover:text-primary">Use Cases</a></li>
+            <li><a href="/blog" class="hover:text-primary">Blog</a></li>
             <li><a href="#" class="hover:text-primary">Pricing</a></li>
           </ul>
         </div>
